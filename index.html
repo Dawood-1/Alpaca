@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    
+</head>
+<style>
+   *{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.pat_two{
+    width: 80%;
+    background-color: whitesmoke;
+}
+.pat_one{
+    width: 20%;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+}
+.sec{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.paper_acco{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px 20px 10px;
+    border-bottom: 3px solid rgb(29, 28, 28);
+    cursor: pointer;
+}
+.docu_acco{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px 20px 10px;
+    /* border-bottom: 3px solid rgb(60, 145, 11); */
+    cursor: pointer;
+}
+.com_acco{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px 252px 10px;
+    /* border-bottom: 3px solid rgb(60, 145, 11); */
+    cursor: pointer;
+}
+.pat_head{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 15px 15px;
+    background-color: rgba(251, 251, 35, 0.773);
+    align-items: center;
+}
+.twos_icon {
+    font-size: 30px;
+    color: gainsboro;
+    padding: 0 5px 0 0;
+}
+.tows_arow{
+    font-size: 10px;
+    color: gray;
+}
+@media(max-width:950px){
+    .acco_title{
+        display: none;
+        text-align: center;
+    }
+    .docu_title{
+        display: none;
+        text-align: center;
+    }
+    .com_title{
+        display: none;
+        text-align: center;
+    }
+   
+}
+@media(max-width:750px){
+    .sec{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+}
+@media(max-width:680px){
+    .sec{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+}
+@media(max-width:650px){
+    .main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.com_acco{
+    
+
+     padding: 30px 15px 2px 10px; 
+    
+    cursor: pointer;
+}
+.pat_one{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+  padding: 0 5px 10px 5px;
+}
+.paper_acco{
+   
+   
+    /* justify-content: space-between; */
+    
+    border-bottom: none;
+    cursor: pointer;
+}
+.docu_acco{
+   
+
+    /* justify-content: space-between; */
+    /* padding: 30px 15px 20px 10px; */
+    /* border-bottom: 3px solid rgb(60, 145, 11); */
+    cursor: pointer;
+}
+.pat_two{
+    width: 100%;
+
+}
+.title{
+    font-size:17px ;
+}
+}
+@media(max-width:450px){
+    .title{
+    font-size:10px ;
+}
+}
+@media(max-width:350px){
+    .title{
+    display: none;
+}
+}
+.contanir{
+    width: 90%;
+    padding: 30px 20px 30px 25px;
+    font-size: 20px;
+    line-height: 33px;
+    border-bottom: 3px solid wheat;
+    margin: auto;
+}
+.contanir_two{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 90px;
+    /* justify-content: space-between; */
+    padding: 140px 0px 30px 5px;
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    width: 29%;
+}
+.box_ti{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    border: 3px solid wheat;
+}
+.box_icon{
+    color: rgb(37, 241, 10);
+}
+.box_two{
+    background-color:wheat ;
+    padding: 20px 10px 20px 10px;
+    border: 3px dotted rgb(198, 144, 42); 
+}
+.two{
+    width: 25%;
+    background-color: white;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.t_icon{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+.t_tit{
+    text-align: center;
+  padding: 0 5px 0 5px;
+}
+.btn{
+    width: 90%;
+    text-align: center;
+    padding: 5px 30px 5px 30px;
+    background-color: yellow;
+    cursor: pointer;
+}
+.btns{
+   text-align: center;
+    padding: 0 0 10px 0;
+   
+}
+.three{
+    width: 25%;
+    background-color: whitesmoke;
+    display: flex;
+    gap: 20px;
+  align-items: center;
+    flex-direction: column;
+    border: 1px solid grey;
+}
+.key_icon{
+    font-size: 35px;
+    padding: 20px 0 20px 0;
+   
+}
+.three_title{
+    text-align: center;
+    padding: 0 5px 0 5px;
+}
+@media(max-width:1080px){
+    .contanir_two{
+    
+    display: flex;
+   flex-direction: column;
+   align-items: center
+    /* justify-content: space-between; */
+    
+    
+}
+.one{
+    width: 80%;
+    
+}
+.two{
+    width: 80%;
+    
+}
+.three{
+    width: 80%;
+    padding-bottom: 20px;
+}
+}
+</style>
+<body>
+    <section class="main">
+        <div class="pat_one">
+         <div class="sec">
+            <div class="logo">  <img src="Alpaca.png" alt="" width="50px"></div> <div class="title"> <h1>Alpaca</h1></div>
+        </div>
+        <div class="paper_acco">
+           <div class="acco_title"> <h5>Go to paper Account </h5></div> <div class="icon_acco"><i class="fa-solid fa-flask"></i></div>
+        </div>
+        <div class="paper_acco">
+            <div class="acco_title"> <h5>OAuth Apps </h5></div> <div class="icon_acco"><i class="fa-solid fa-braille"></i></div>
+         </div>
+         <div class="docu_acco">
+            <div class="docu_title"> <h5>Documentation</h5></div> <div class="icon_docu"><i class="fa-solid fa-file"></i></div>
+         </div>
+         <div class="docu_acco">
+            <div class="docu_title"> <h5>Communtiy Slak</h5></div> <div class="icon_docu"><i class="fa-solid fa-group-arrows-rotate"></i></div>
+         </div>
+         <div class="com_acco">
+            <div class="com_title"> <h5>Communtiy Forum</h5></div> <div class="icon_com"><i class="fa-solid fa-address-book"></i></div>
+         </div>
+         </div>
+        <div class="pat_two">
+         <div class="pat_head">
+            <div class="pat_title"> <h1>Live Trading</h1></div> <div class="pat_icon"><i class="fa-solid fa-user twos_icon" ></i><i class="fa-solid fa-square-caret-down tows_arow" ></i></div>
+         </div>
+         <div class="contanir">
+          <div class="cont_tit"> <h1> Hey, Welcome to Alpaca!</h1></div>
+           <div class="cont_p"><p>complete the following steep to strat our trading through appls or alogs.</p></div>
+         </div>
+         <div class="contanir_two">
+            <div class="one">
+                
+                <div class="box_one">
+                   <div class="box_ti"> <div class="box_tit"><h3>Create an Alpaca Account</h3></div> <div class="box_icon"><i class="fa-regular fa-circle-check"></i></div></div>
+                </div>
+                <div class="box_two">
+                 <div class="b_t_tit"> <h5> PENDING APPROVER</h5></div>
+                <div class="b_t_p"><P> your application is under review. we will notify you once you’ve been approved.</P></div>
+                </div>
+            </div>
+            <div class="two">
+               <div class="t_icon"><i class="fa-solid fa-house "></i></div>
+               <div class="t_tit">
+                <h4>Link Bank Account</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae excepturi, consectetur quisquam dicta tenetur molestiae nostrum.</p>
+            </div>
+           <div class="btns"> <a href=""><button class="btn">Link Bank Account</button></a></div>
+        </div>
+            <div class="three">
+                <div class="three_icon"><i class="fa-solid fa-key key_icon"></i></div>
+              <div class="three_title">  <h3>contact to trade!</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam praesentium reiciendis placeat pariatur odit quo corporis cupiditate minus repudiandae ullam!</p></div>
+           
+         </div>
+        </div>
+    </section>
+</body>
+</html>
